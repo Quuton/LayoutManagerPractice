@@ -9,10 +9,10 @@ public class Preferences extends JPanel {
     JLabel primaryDestinationLabel = new JLabel("Primary Destination");
     JLabel secondaryDestinationLabel = new JLabel("Secondary Destination");
 
-    JComboBox<String> primaryActivityComboBox = new JComboBox<String>();
-    JComboBox<String> secondaryActivityComboBox = new JComboBox<String>();
-    JComboBox<String> primaryDestinationComboBox = new JComboBox<String>();
-    JComboBox<String> secondaryDestinationComboBox = new JComboBox<String>();
+    JComboBox<String> primaryActivityComboBox = new JComboBox<String>(new String[] {"Walking Tours"});
+    JComboBox<String> secondaryActivityComboBox = new JComboBox<String>(new String[] {"Canoing"});
+    JComboBox<String> primaryDestinationComboBox = new JComboBox<String>(new String[] {"Indonesia"});
+    JComboBox<String> secondaryDestinationComboBox = new JComboBox<String>(new String[] {"Iceland"});
 
 
 
@@ -92,5 +92,9 @@ public class Preferences extends JPanel {
         secondaryDestinationComboBoxConstraints.gridwidth = 2;
         this.add(secondaryDestinationComboBox, secondaryDestinationComboBoxConstraints);
 
+        primaryActivityComboBox.setPrototypeDisplayValue("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+        secondaryActivityComboBox.setPrototypeDisplayValue("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+        primaryDestinationComboBox.setPrototypeDisplayValue("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+        secondaryDestinationComboBox.setPrototypeDisplayValue("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
     }
 }

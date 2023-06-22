@@ -10,7 +10,7 @@ public class Editor extends JPanel{
         tempPanel.setLayout(new GridLayout(1, 2, 20, 20));
         tempPanel.add(new Preferences());
         tempPanel.add(new Personal());
-        this.add(tempPanel, BorderLayout.CENTER);
+        this.add(tempPanel, BorderLayout.SOUTH);
         }   
     
 }

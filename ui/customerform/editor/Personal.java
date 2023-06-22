@@ -9,15 +9,15 @@ public class Personal extends JPanel{
     JLabel heightLabel = new JLabel("Height Inches:");
     JLabel weightLabel = new JLabel("Weight Pounds:");
 
-    JTextField birthDateComboBox = new JTextField();
-    JTextField dietaryComboBox = new JTextField();
-    JTextField heightComboBox = new JTextField();
-    JTextField weightComboBox = new JTextField();
+    JTextField birthDateComboBox = new JTextField("temp", 30);
+    JTextField dietaryComboBox = new JTextField("Allergic to shellfish", 30);
+    JTextField heightComboBox = new JTextField("75", 30);
+    JTextField weightComboBox = new JTextField("100", 30);
 
 
 
     public Personal(){
-        this.setBorder(BorderFactory.createTitledBorder("Preferences"));
+        this.setBorder(BorderFactory.createTitledBorder("Personal"));
         this.setLayout(new GridBagLayout());
 
         GridBagConstraints birthDateLabelConstraints = new GridBagConstraints();
@@ -91,6 +91,7 @@ public class Personal extends JPanel{
         weightComboBoxConstraints.gridy = 3;
         weightComboBoxConstraints.gridwidth = 2;
         this.add(weightComboBox, weightComboBoxConstraints);
-
+        
+       
     }
 }

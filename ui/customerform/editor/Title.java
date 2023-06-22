@@ -8,15 +8,16 @@ public class Title extends JPanel {
     JLabel lastNameLabel = new JLabel("Last Name:");
     JLabel typeLabel = new JLabel("Customer Type:");
 
-    JTextField titleTextField = new JTextField();
-    JTextField firstNameTextField = new JTextField();
-    JTextField lastNameTextField = new JTextField();
+    JTextField titleTextField = new JTextField(20);
+    JTextField firstNameTextField = new JTextField("George",20);
+    JTextField lastNameTextField = new JTextField("Alderson", 20);
     JComboBox<String> typeComboBox = new JComboBox<String>();
 
 
 
     public Title() {
-        this.setLayout(new FlowLayout());
+        typeComboBox.setPrototypeDisplayValue("XXXXXXXXXXXXXXXXXX");
+        this.setLayout(new FlowLayout(FlowLayout.LEFT));
         this.add(titleLabel);
         this.add(titleTextField);
         this.add(firstNameLabel);
