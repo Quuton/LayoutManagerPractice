@@ -2,6 +2,7 @@ package ui.customerform.editor;
 
 import javax.swing.*;
 import java.awt.*;
+import com.toedter.calendar.JDateChooser;
 
 public class Personal extends JPanel{
     JLabel birthDateLabel = new JLabel("Birth Date:");
@@ -9,7 +10,7 @@ public class Personal extends JPanel{
     JLabel heightLabel = new JLabel("Height Inches:");
     JLabel weightLabel = new JLabel("Weight Pounds:");
 
-    JTextField birthDateComboBox = new JTextField("temp", 30);
+    JDateChooser birthDateDateChooser = new JDateChooser();
     JTextField dietaryComboBox = new JTextField("Allergic to shellfish", 30);
     JTextField heightComboBox = new JTextField("75", 30);
     JTextField weightComboBox = new JTextField("100", 30);
@@ -56,14 +57,14 @@ public class Personal extends JPanel{
         weightLabelConstraints.gridwidth = 1;
         this.add(weightLabel, weightLabelConstraints);
 
-        GridBagConstraints birthDateComboBoxConstraints = new GridBagConstraints();
-        birthDateComboBoxConstraints.fill = GridBagConstraints.HORIZONTAL;
-        birthDateComboBoxConstraints.insets = new Insets(10, 10, 10, 10);
-        birthDateComboBoxConstraints.anchor = GridBagConstraints.CENTER;
-        birthDateComboBoxConstraints.gridx = 1;
-        birthDateComboBoxConstraints.gridy = 0;
-        birthDateComboBoxConstraints.gridwidth = 2;
-        this.add(birthDateComboBox, birthDateComboBoxConstraints);
+        GridBagConstraints birthDateDateChooserConstraints = new GridBagConstraints();
+        birthDateDateChooserConstraints.fill = GridBagConstraints.HORIZONTAL;
+        birthDateDateChooserConstraints.insets = new Insets(10, 10, 10, 10);
+        birthDateDateChooserConstraints.anchor = GridBagConstraints.CENTER;
+        birthDateDateChooserConstraints.gridx = 1;
+        birthDateDateChooserConstraints.gridy = 0;
+        birthDateDateChooserConstraints.gridwidth = 2;
+        this.add(birthDateDateChooser, birthDateDateChooserConstraints);
 
         GridBagConstraints dietaryComboBoxConstraints = new GridBagConstraints();
         dietaryComboBoxConstraints.fill = GridBagConstraints.HORIZONTAL;

@@ -6,7 +6,7 @@ import java.awt.*;
 public class Selector extends JPanel {
     public Selector() {
         this.setLayout(new GridBagLayout());
-        this.setBorder(BorderFactory.createRaisedBevelBorder());
+        this.setBorder(BorderFactory.createEtchedBorder());
 
         GridBagConstraints customerConstraints = new GridBagConstraints();
         customerConstraints.insets = new Insets(10, 10, 10, 10);
